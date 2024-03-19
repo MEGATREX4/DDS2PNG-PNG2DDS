@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Converter</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Image Converter</h1>
+    <form method="post" enctype="multipart/form-data">
+        <label for="conversion_type">Select conversion type:</label>
+        <select name="conversion_type" id="conversion_type">
+            <option value="png_to_dds">PNG to DDS</option>
+            <option value="dds_to_png">DDS to PNG</option>
+        </select>
+        <button type="submit">Convert Files</button>
+    </form>
+</body>
+</html>
